@@ -1,0 +1,46 @@
+.container{
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    background-color: aquamarine;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    animation: Bounce-X 3s linear infinite, Bounce-Y-down 1s cubic-bezier(1,0,1,1) infinite, Bounce-Y-up 1s cubic-bezier(0,0,0,1) 0.5s infinite;
+    position: relative;
+}
+
+@keyframes Bounce-X{
+    
+    from{
+        left: 0%;
+    }
+    to{
+        left: 91.8%;
+    }
+    
+}
+
+@keyframes Bounce-Y-down {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 90%;
+    }
+
+}
+
+@keyframes Bounce-Y-up {
+
+    0%{
+        top: 90%;
+    }
+    50%{
+        top: 0;
+    }
+}
