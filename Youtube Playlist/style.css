@@ -1,0 +1,81 @@
+:root {
+    --base-background-color: #0f0f0f;
+    --hover-background-color: #212121;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--base-background-color);
+    gap: 8px;
+    padding: 8px;
+    display: flex;
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    width: 50%;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    background-color: var(--hover-background-color) !important;
+}
+
+.image-div {
+    position: relative;
+}
+
+.image-div>img {
+    width: 160px;
+    border-radius: 8px;
+}
+
+.duration-span {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 1px 4px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.title-container {
+    font-size: 1.6rem;
+}
+
+.by-line-container {
+    margin-top: 1em;
+    color: #aaa;
+    font-size: 0.7em;
+}
+
+.dot-span{
+    margin : auto 0.3em
+}
+
+.a-tag{
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
